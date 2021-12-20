@@ -90,9 +90,7 @@ fun Content(controller: Controller = Controller()) {
                     list = imageSuits,
                     modifier = Modifier.padding(top = 30.dp),
                     indexEnd
-                ) {
-                    indexEnd = it
-                }
+                )
             }
             BottomSection(imageSuit = imageSuits[4]) {
                 indexStart = -1

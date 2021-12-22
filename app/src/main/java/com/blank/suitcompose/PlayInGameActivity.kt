@@ -1,5 +1,6 @@
 package com.blank.suitcompose
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -144,6 +145,7 @@ fun PlayerNameView(player1: String, player2: String) {
 
 @Composable
 fun TopSection(close: ImageSuit) {
+    val context = LocalContext.current
     Box(modifier = Modifier.fillMaxWidth()) {
         Image(
             painter = painterResource(id = R.drawable.splash_screen1),
@@ -158,6 +160,9 @@ fun TopSection(close: ImageSuit) {
             modifier = Modifier
                 .size(50.dp)
                 .align(Alignment.TopEnd)
+                .clickable {
+                    (context as Activity).finish()
+                }
         )
     }
 }

@@ -12,7 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuitCompose">
         <activity
-            android:name=".SecondActivity"
+            android:name=".LandingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_landing"
+            android:theme="@style/Theme.SuitCompose.NoActionBar" />
+        <activity
+            android:name=".PlayInGameActivity"
             android:exported="false"
             android:label="@string/title_activity_second"
             android:theme="@style/Theme.SuitCompose.NoActionBar" />

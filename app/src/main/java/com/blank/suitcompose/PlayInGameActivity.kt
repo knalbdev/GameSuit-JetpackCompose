@@ -45,7 +45,7 @@ class PlayInGameActivity : ComponentActivity() {
 }
 
 @Composable
-fun Content(controller: Controller = Controller()) {
+private fun Content(controller: Controller = Controller()) {
     val context = LocalContext.current
     Scaffold(modifier = Modifier.padding(16.dp)) {
         val imageSuits = mutableListOf<ImageSuit>()
